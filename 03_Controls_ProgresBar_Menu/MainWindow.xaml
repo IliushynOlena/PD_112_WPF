@@ -1,0 +1,120 @@
+﻿<Window x:Class="_03_Controls_ProgresBar_Menu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_03_Controls_ProgresBar_Menu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="265" Width="800"
+        AllowsTransparency="True" WindowStyle="None" 
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ContextMenu x:Key="myContextMenu">
+            <MenuItem Header="1 MainWindow.xaml" IsChecked="True" IsCheckable="True"></MenuItem>
+            <MenuItem Header="2 MainWindow.xaml.cs"></MenuItem>
+            <MenuItem Header="3 App.xaml" IsChecked="True"></MenuItem>
+            <MenuItem Header="4 App.xaml.cs"></MenuItem>
+            <Slider HorizontalAlignment="Stretch" Width="150"></Slider>
+            <RadioButton>Type 1</RadioButton>
+            <RadioButton>Type 2</RadioButton>
+        </ContextMenu>
+        <ContextMenu x:Key="myContextMenu2">
+            <Slider HorizontalAlignment="Stretch" Width="150"></Slider>
+            <RadioButton>Type 1</RadioButton>
+            <RadioButton>Type 2</RadioButton>
+        </ContextMenu>
+    </Window.Resources>
+
+    <StackPanel Margin="10">
+      
+        <Menu IsMainMenu="True">
+            <MenuItem Header="File">
+                <MenuItem Header="New">
+                    <MenuItem.Icon>
+                        <Image Source="Resources\1.png"></Image>
+                    </MenuItem.Icon>
+                    <MenuItem Header="Project..." InputGestureText="Ctrl+Shift+N" 
+                              Click="MenuItem_Click_1"></MenuItem>
+                    <MenuItem Header="File" InputGestureText="Ctrl+N"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Add"></MenuItem>
+                <Separator/>
+                <MenuItem Header="Exit" Click="MenuItem_Click_2" 
+                          InputGestureText="Alt+F4"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Window">
+                <MenuItem Header="1 MainWindow.xaml" IsChecked="True" IsCheckable="True"></MenuItem>
+                <MenuItem Header="2 MainWindow.xaml.cs"></MenuItem>
+                <MenuItem Header="3 App.xaml" IsChecked="True"></MenuItem>
+                <MenuItem Header="4 App.xaml.cs"></MenuItem>
+                <Slider HorizontalAlignment="Stretch" Width="150"></Slider>
+                <RadioButton>Type 1</RadioButton>
+                <RadioButton>Type 2</RadioButton>
+              
+            </MenuItem>
+            
+            <MenuItem Header="Help"></MenuItem>
+            
+        </Menu>
+        
+        <ProgressBar Maximum="100" Minimum="0" Value="35"
+                     Height="30" Margin="5" Width="300"
+                     IsIndeterminate="True"/>
+        <ProgressBar Foreground="Aqua" Name="progressBar"
+                     Height="30" Maximum="100" Minimum="0" Value="55"
+                     Width="300"/>
+        <Button Width="100" Margin="10" Click="Button_Click" Content="Start" 
+                ContextMenu="{StaticResource myContextMenu}">
+           
+        </Button>
+        <Button Width="100" Click="Button_Click_1" ContextMenu="{StaticResource myContextMenu2}">Stop</Button>
+        <DockPanel LastChildFill="False">
+            <StatusBar DockPanel.Dock="Bottom">
+                <Label>Status : Normal</Label>
+                <Label>Time: 33 sec</Label>
+            </StatusBar>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Slider ToolTip="Slide me" Grid.Row="0" Maximum="100" Value="10" Width="300"/>
+                <Slider Grid.Row="1" Maximum="100" Value="10" TickFrequency="10"
+                        TickPlacement="BottomRight">
+                    <Slider.ToolTip>
+                        <TextBlock>
+                            <Span Foreground="Red">Red</Span>
+                            <Span Foreground="Green">Green</Span>
+                            <Span Foreground="Yellow">Yellow</Span>
+                        </TextBlock>
+                    </Slider.ToolTip>                    
+                </Slider>
+                <Slider Grid.Row="2" Maximum="100" Ticks="0,5,10,15,25,50,100"
+                        TickPlacement="BottomRight" Value="10" Foreground="Red"
+                        IsSnapToTickEnabled="True"/>
+                <Slider Grid.Row="3" Maximum="100" Value="20" 
+                        IsSelectionRangeEnabled="True" SelectionStart="35"
+                        SelectionEnd="75" TickFrequency="10"
+                        TickPlacement="BottomRight" AutoToolTipPlacement="BottomRight" />
+                <Slider Name="slider" Orientation="Vertical" Grid.Row="0"
+                        Grid.Column="1" Grid.RowSpan="4" Maximum="100"
+                        Value="100" TickPlacement="Both" TickFrequency="25" 
+                        ValueChanged="slider_ValueChanged"/>
+
+            </Grid>
+
+           
+
+        </DockPanel>
+      
+
+
+    </StackPanel>
+  
+</Window>
