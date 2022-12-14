@@ -1,0 +1,35 @@
+﻿<Window x:Class="_06_Data_Bindings_Data_Context.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_06_Data_Bindings_Data_Context"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label> Value : </Label>
+        <TextBox x:Name="txtBox1"></TextBox>
+        <Label>Vakue :</Label>
+        <ProgressBar Value="{Binding ElementName=txtBox1, Path=Text}" Height="30"></ProgressBar>
+
+        <TextBlock>Slide value : <Run Text="{Binding ElementName=slider, Path=Value}"></Run> </TextBlock>
+        <Slider Margin="10,5" Name="slider" ></Slider>
+        <TextBox x:Name="txtBox2" Text="{Binding ElementName=slider, Path=Value, Mode=TwoWay, 
+            UpdateSourceTrigger=LostFocus}"></TextBox>
+
+        <Label Margin="10,2"> Enabled : </Label>
+        <CheckBox Margin="10,2" IsChecked="{Binding ElementName=slider, Path=IsEnabled}"></CheckBox>
+        
+        <!-- 
+        Mode default value:
+        User-editable control : TwoWay
+        Other : One Way        
+        -->
+        <!-- 
+        UpdateSourceTrigger default value:
+        Text controls : Lost Focus
+        Other : Property changed        
+        -->
+
+    </StackPanel>
+</Window>
