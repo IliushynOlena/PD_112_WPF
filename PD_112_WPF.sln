@@ -13,11 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_List_Controls_Collection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_ListBoxBinding", "05_ListBoxBinding\05_ListBoxBinding.csproj", "{9CD7417E-80D6-4146-ADB1-BDC66717A104}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Data_Bindings_Data_Context", "06_Data_Bindings_Data_Context\06_Data_Bindings_Data_Context.csproj", "{E52A0B5B-FC73-4EC5-8DD9-EC929DF5EC94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_Data_Bindings_Data_Context", "06_Data_Bindings_Data_Context\06_Data_Bindings_Data_Context.csproj", "{E52A0B5B-FC73-4EC5-8DD9-EC929DF5EC94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_DataContext", "07_DataContext\07_DataContext.csproj", "{1A37DA2C-37C2-480A-ADFB-C9A72395682A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_DataContext", "07_DataContext\07_DataContext.csproj", "{1A37DA2C-37C2-480A-ADFB-C9A72395682A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_PhoneBookBindings", "08_PhoneBookBindings\08_PhoneBookBindings.csproj", "{04E0C0B0-9F51-4CA3-B540-AB51342E630A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_PhoneBookBindings", "08_PhoneBookBindings\08_PhoneBookBindings.csproj", "{04E0C0B0-9F51-4CA3-B540-AB51342E630A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_ MVVM Pattern", "09_ MVVM Pattern\09_ MVVM Pattern.csproj", "{AF02AF68-AE89-407D-8C09-15661653BA0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{04E0C0B0-9F51-4CA3-B540-AB51342E630A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04E0C0B0-9F51-4CA3-B540-AB51342E630A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04E0C0B0-9F51-4CA3-B540-AB51342E630A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF02AF68-AE89-407D-8C09-15661653BA0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF02AF68-AE89-407D-8C09-15661653BA0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF02AF68-AE89-407D-8C09-15661653BA0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF02AF68-AE89-407D-8C09-15661653BA0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

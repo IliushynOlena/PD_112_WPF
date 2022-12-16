@@ -6,8 +6,10 @@ namespace _08_PhoneBookBindings
     public class ViewModel
     {
         ObservableCollection<Contact> contacts = new ObservableCollection<Contact>();
+      
         public IEnumerable<Contact> Contacts => contacts;
         public Contact SelectedContact { get; set; }
+
 
         public ViewModel()
         {
