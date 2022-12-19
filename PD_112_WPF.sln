@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_DataContext", "07_DataCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_PhoneBookBindings", "08_PhoneBookBindings\08_PhoneBookBindings.csproj", "{04E0C0B0-9F51-4CA3-B540-AB51342E630A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_ MVVM Pattern", "09_ MVVM Pattern\09_ MVVM Pattern.csproj", "{AF02AF68-AE89-407D-8C09-15661653BA0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_ MVVM Pattern", "09_ MVVM Pattern\09_ MVVM Pattern.csproj", "{AF02AF68-AE89-407D-8C09-15661653BA0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_ColorViewer", "10_ColorViewer\10_ColorViewer.csproj", "{0809865D-1CB4-4CEA-9F3B-E4F082D5CB27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{AF02AF68-AE89-407D-8C09-15661653BA0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF02AF68-AE89-407D-8C09-15661653BA0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF02AF68-AE89-407D-8C09-15661653BA0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0809865D-1CB4-4CEA-9F3B-E4F082D5CB27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0809865D-1CB4-4CEA-9F3B-E4F082D5CB27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0809865D-1CB4-4CEA-9F3B-E4F082D5CB27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0809865D-1CB4-4CEA-9F3B-E4F082D5CB27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

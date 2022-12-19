@@ -26,9 +26,6 @@ namespace _08_PhoneBookBindings
             this.DataContext = model; 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            model.DeleteSelected();
-        }
+   
     }
 }
